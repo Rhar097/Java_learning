@@ -49,7 +49,7 @@ class Circle implements Shape
 	{
 		if (radius<=0)
 		{
-			throw new RuntimeException("非法");
+			throw new NoValueException("非法");
 		}
 		this.radius = radius;
 	}

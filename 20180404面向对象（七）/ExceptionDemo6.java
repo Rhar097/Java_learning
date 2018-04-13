@@ -1,5 +1,5 @@
 
-��һ����ʽ��
+第一个格式：
 try
 {
 	
@@ -8,7 +8,7 @@ catch ()
 {
 }
 
-�ڶ�����ʽ��
+第二个格式：
 try
 {
 	
@@ -22,7 +22,7 @@ finally
 }
 
 
-��������ʽ��
+第三个格式：
 try
 {
 	
@@ -31,21 +31,21 @@ finally
 {
 
 }
-//��סһ�㣺catch�����ڴ����쳣�ģ����û��catch�ʹ����쳣û�б���������������쳣�Ǽ��ʱ�쳣����ô����������
+//记住一点：catch是用于处理异常的，如果没有catch就代表异常没有被处理过，如果该异常是检测时异常，那么必须声明。
 
 
 class Demo
 {
-	public void method()//ֻҪ���ⱻ����Ͳ���������
+	public void method()//只要问题被解决就不用声明。
 	{
 		try
 		{
 			throw new Exception();
 		}
-		//catch (Exception e)//��catch�ͽ����ⱻ�����
+		//catch (Exception e)//有catch就叫问题被解决。
 		finally
 		{
-			//����Դ��
+			//关资源。
 			
 		}
 		

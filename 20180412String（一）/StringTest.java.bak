@@ -5,7 +5,7 @@
 		结尾处判断空格也是如此。
 	2.当开始和结尾都判断不是空格时，就是要获取的字符串。
 
-2.将一个字符串进行反转。将字符串中指定部分进行反转，“abcdefg”；abfedvg
+2.将一个字符串进行反转。将字符串中指定部分进行反转，“abcdefg”；abfedcg
 	思路：
 	1.曾经学习过对数组的元素进行反转。
 	2.将字符串变成数组，对数组反转。
@@ -49,10 +49,15 @@ class StringTest
 		sop("("+s+")");
 		*/
 
+		
 		//练习二
 		String s = "abcdefg";
 
 		sop(reverseString(s,2,6));
+		
+
+		//练习三
+
 
 	}
 
@@ -85,7 +90,7 @@ class StringTest
 	}
 	private static void reverse(char[] arr,int x,int y)
 	{
-		for (int start=x,end=-1; start<end; start++,end--)
+		for (int start=x,end=y-1; start<end; start++,end--)
 		{
 			swap(arr,start,end);
 		}
@@ -96,4 +101,7 @@ class StringTest
 		arr[x] = arr[y];
 		arr[y] = temp;
 	}
+
+	//练习三，获取一个字符串在另一个字符串中出现的次数。
+
 }

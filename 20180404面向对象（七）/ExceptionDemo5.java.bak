@@ -1,3 +1,10 @@
+
+/*
+	finally代码块：定义一定执行的代码。
+	通常用于关闭资源。
+
+*/
+
 class FuShuException extends Exception
 {
 	FuShuException(String msg)
@@ -47,9 +54,12 @@ class ExceptionDemo5
 }
 
 
+class NoException extends Exception
+{
+}
 
 
-public void method()
+public void method()throws NoException
 {
 	连接数据库；
 	
@@ -66,6 +76,8 @@ public void method()
 	}
 	catch (SQLException e)
 	{
+		会对数据库进行异常处理；
+		throw new NoException();//问题的封装。
 
 	}
 	finally

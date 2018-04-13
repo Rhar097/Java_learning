@@ -35,10 +35,10 @@ class Fu
 
 class Zi extends Fu
 {
-	int num = 5;
+	//int num = 5;
 	void show()
 	{
-		System.out.println(super.num);
+		System.out.println(num);
 	}
 }
 

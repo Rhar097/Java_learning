@@ -1,28 +1,28 @@
 /*
-��̬��Ӧ�á�
+静态的应用。
 
-ÿһ��Ӧ�ó����ж��й��ԵĹ��ܡ�
-���Խ���Щ���ܽ��г�ȡ��������װ��
-�Ա㸴�á�
+每一个应用程序中都有共性的功能。
+可以将这些功能进行抽取，独立封装。
+以便复用。
 
-��Ȼ����ͨ������ArrayTool�Ķ���ʹ����Щ���߷�������������в�����
-���������⣺
-1.����ʱ���ڷ�װ���ݵģ�����ArrayTool����δ��װ��������.
-2.���������ÿһ��������û���õ�ArrayTool�����е��������ݡ�
+虽然可以通过建立ArrayTool的对象使用这些工具方法，对数组进行操作。
+发现了问题：
+1.对象时用于封装数据的，可是ArrayTool对象并未封装特有数据.
+2.操作数组的每一个方法都没有用到ArrayTool对象中的特有数据。
 
-��ʱ�Ϳ��ǣ��ó�����Ͻ����ǲ���Ҫ����ġ�
-���Խ�ArrayTool�еķ����������static�ģ�ֱ��ͨ���������ü��ɡ�
+这时就考虑，让程序更严谨，是不需要对象的。
+可以将ArrayTool中的方法都定义成static的，直接通过类名调用即可。
 
-����������̬�󣬿��Է�����ʹ�ã����Ǹ��໹�ǿ��Ա���������������ġ�
-Ϊ�˸�Ϊ�Ͻ���ǿ���ø��಻�ܽ�������
-����ͨ�������캯��˽�л���ɡ�
+将方法都静态后，可以方便于使用，但是该类还是可以被其他程序建立对象的。
+为了更为严谨，强制让该类不能建立对象。
+可以通过将构造函数私有化完成。
 
 
 
-����������ArrayTool.class�ļ����͸������ˣ�������ֻҪ�����ļ����õ�classpath·���£��Ϳ���ʹ�øù����ࡣ
-���Ǻ��ź��������е��׶����˶��ٸ��������Է�ȴ���������Ϊ���ಢû��˵���顣
+接下来，将ArrayTool.class文件发送给其他人，其他人只要将该文件设置到classpath路径下，就可以使用该工具类。
+但是很遗憾，该类中到底定义了多少个方法，对方却不清楚，因为该类并没有说明书。
 
-��ʼ���������˵���顣java��˵����ͨ���ĵ�ע������ɡ�
+开始制作程序的说明书。java的说明书通过文档注释来完成。
 
 */
 
@@ -30,7 +30,7 @@
 
 
 /**
-����һ�����Զ�������в����Ĺ����࣬�������ṩ�ˣ���ȡ��ֵ������ȹ��ܡ�
+这是一个可以对数组进行操作的工具类，该类中提供了，获取最值，排序等功能。
 @author Rhar
 @version v1.1
 
@@ -38,14 +38,14 @@
 public class ArrayTool
 {
 	/**
-	�ղ������캯����
+	空参数构造函数。
 	*/
 	private ArrayTool(){}
 
 	/**
-	��ȡһ�����������е����ֵ��
-	@param arr������һ��int���͵����顣
-	@return �᷵��һ�������������ֵ��
+	获取一个整形数组中的最大值。
+	@param arr：接收一个int类型的数组。
+	@return 会返回一个该数组中最大值。
 	*/
 	public static int getMax(int[] arr)
 	{
@@ -59,9 +59,9 @@ public class ArrayTool
 	}
 
 	/**
-	��ȡһ�����������е���Сֵ��
-	@param arr������һ��int���͵����顣
-	@return �᷵��һ������������Сֵ��
+	获取一个整形数组中的最小值。
+	@param arr：接收一个int类型的数组。
+	@return 会返回一个该数组中最小值。
 	*/
 	public static int getMin(int[] arr)
 	{
@@ -75,8 +75,8 @@ public class ArrayTool
 	}
 
 	/**
-	��int�������ѡ������
-	@param arr������һ��int���͵����顣
+	给int数组进行选择排序。
+	@param arr：接收一个int类型的数组。
 	*/
 	public static void selectSort(int[] arr)
 	{
@@ -93,8 +93,8 @@ public class ArrayTool
 	}
 
 	/**
-	��int�������ð������
-	@param arr������һ��int���͵����顣
+	给int数组进行冒泡排序。
+	@param arr：接收一个int类型的数组。
 	*/
 	public static void bubbleSort(int[] arr)
 	{
@@ -111,10 +111,10 @@ public class ArrayTool
 	}
 
 	/**
-	��������Ԫ�ؽ���λ�õĻ�����
-	@param arr ����һ��int���͵�����
-	@param a Ҫ�û���λ��
-	@param b Ҫ�û���λ��
+	给数组中元素进行位置的互换。
+	@param arr 接收一个int类型的数组
+	@param a 要置换的位置
+	@param b 要置换的位置
 	*/
 	private static void swap(int[] arr,int a,int b)
 	{
@@ -124,7 +124,7 @@ public class ArrayTool
 	}
 
 	/**
-	���ڴ�ӡ�����е�Ԫ�أ���ӡ��ʽ�ǣ�{element1,element2,��}
+	用于打印数组中的元素，打印形式是：{element1,element2,…}
 	*/
 	public static void printArray(int[] arr)
 	{
@@ -143,12 +143,12 @@ public class ArrayTool
 
 
 /*
-һ������Ĭ�ϻ���һ���ղ����Ĺ��캯��������д����Ĭ�ϣ�
-���Ĭ�ϵĹ��캯����Ȩ�޺�������һ�¡�
-����౻public���Σ���ôĬ�ϵĹ��캯��Ҳ��public���η���
-�����û�б�public���Σ���ôĬ�ϵĹ��캯��Ҳû��public���Ρ�
+一个类中默认会有一个空参数的构造函数。（不写就是默认）
+这个默认的构造函数的权限和所属类一致。
+如果类被public修饰，那么默认的构造函数也带public修饰符。
+如果类没有被public修饰，那么默认的构造函数也没有public修饰。
 
-Ĭ�Ϲ��칹�캯����Ȩ����������ı仯���仯�ġ�
+默认构造构造函数的权限是随着类的变化而变化的。
 
 
 */

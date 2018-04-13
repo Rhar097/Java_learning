@@ -1,25 +1,25 @@
 /*
-ExceptionÖÐÓÐÒ»¸öÌØÊâµÄ×ÓÀàÒì³£RuntimeException ÔËÐÐÊ±Òì³£¡£
+Exceptionä¸­æœ‰ä¸€ä¸ªç‰¹æ®Šçš„å­ç±»å¼‚å¸¸RuntimeException è¿è¡Œæ—¶å¼‚å¸¸ã€‚
 
-Èç¹ûÔÚº¯ÊýÄÚÈÝÅ×³ö¸ÃÒì³££¬º¯ÊýÉÏ¿ÉÒÔ²»ÓÃÉùÃ÷£¬±àÒëÒ»ÑùÍ¨¹ý¡£
+å¦‚æžœåœ¨å‡½æ•°å†…å®¹æŠ›å‡ºè¯¥å¼‚å¸¸ï¼Œå‡½æ•°ä¸Šå¯ä»¥ä¸ç”¨å£°æ˜Žï¼Œç¼–è¯‘ä¸€æ ·é€šè¿‡ã€‚
 
-Èç¹ûÔÚº¯ÊýÉÏÉùÃ÷ÁË¸ÃÒì³££¬µ÷ÓÃÕß¿ÉÒÔ²»ÓÃ½øÐÐ´¦Àí£¬±àÒëÒ»ÑùÍ¨¹ý¡£
-
-
-Ö®ËùÒÔ²»ÓÃÔÚº¯ÊýÉùÃ÷£¬ÊÇÒòÎª²»ÐèÒªÈÃµ÷ÓÃÕß´¦Àí¡£
-µ±¸ÃÒì³£·¢Éú£¬Ï£Íû³ÌÐòÍ£Ö¹£¬ÒòÎªÔÚÔËÐÐÊ±£¬³öÏÖÁËÎÞ·¨¼ÌÐøÔËËãµÄÇé¿ö£¬Ï£ÍûÍ£Ö¹³ÌÐòºó£¬
-ÓÐ³ÌÐòÔ±¶Ô´úÂë½øÐÐÐÞÕý¡£
+å¦‚æžœåœ¨å‡½æ•°ä¸Šå£°æ˜Žäº†è¯¥å¼‚å¸¸ï¼Œè°ƒç”¨è€…å¯ä»¥ä¸ç”¨è¿›è¡Œå¤„ç†ï¼Œç¼–è¯‘ä¸€æ ·é€šè¿‡ã€‚
 
 
+ä¹‹æ‰€ä»¥ä¸ç”¨åœ¨å‡½æ•°å£°æ˜Žï¼Œæ˜¯å› ä¸ºä¸éœ€è¦è®©è°ƒç”¨è€…å¤„ç†ã€‚
+å½“è¯¥å¼‚å¸¸å‘ç”Ÿï¼Œå¸Œæœ›ç¨‹åºåœæ­¢ï¼Œå› ä¸ºåœ¨è¿è¡Œæ—¶ï¼Œå‡ºçŽ°äº†æ— æ³•ç»§ç»­è¿ç®—çš„æƒ…å†µï¼Œå¸Œæœ›åœæ­¢ç¨‹åºåŽï¼Œ
+æœ‰ç¨‹åºå‘˜å¯¹ä»£ç è¿›è¡Œä¿®æ­£ã€‚
 
-×Ô¶¨ÒåÒì³£Ê±£¬Èç¹û¸ÃÒì³£µÄ·¢Éú£¬ÎÞ·¨ÔÙ¼ÌÐø½øÐÐÔËËã£¬
-¾ÍÈÃ×Ô¶¨ÒåÒì³£¼Ì³ÐRuntimeException.
 
 
-¶ÔÓÚÒì³£·ÖÁ½ÖÖ£º
-1.±àÒëÊ±±»¼ì²âµÄÒì³£¡£
+è‡ªå®šä¹‰å¼‚å¸¸æ—¶ï¼Œå¦‚æžœè¯¥å¼‚å¸¸çš„å‘ç”Ÿï¼Œæ— æ³•å†ç»§ç»­è¿›è¡Œè¿ç®—ï¼Œ
+å°±è®©è‡ªå®šä¹‰å¼‚å¸¸ç»§æ‰¿RuntimeException.
 
-2.±àÒëÊ±²»±»¼ì²âµÄÒì³££¨ÔËÐÐÊ±Òì³££¬RuntimeExceptionÒÔ¼°Æä×ÓÀà£©¡£
+
+å¯¹äºŽå¼‚å¸¸åˆ†ä¸¤ç§ï¼š
+1.ç¼–è¯‘æ—¶è¢«æ£€æµ‹çš„å¼‚å¸¸ã€‚
+
+2.ç¼–è¯‘æ—¶ä¸è¢«æ£€æµ‹çš„å¼‚å¸¸ï¼ˆè¿è¡Œæ—¶å¼‚å¸¸ï¼ŒRuntimeExceptionä»¥åŠå…¶å­ç±»ï¼‰ã€‚
 
 */
 
@@ -37,12 +37,12 @@ class Demo
 	{
 		if (b<0)
 		{
-			throw new FuShuException("³öÏÖÁË³ýÊýÎª¸ºÊýÁË");
+			throw new FuShuException("å‡ºçŽ°äº†é™¤æ•°ä¸ºè´Ÿæ•°äº†");
 		}
 		
 		if (b==0)
 		{
-			throw new ArithmeticException("±»Áã³ýÀ²");
+			throw new ArithmeticException("è¢«é›¶é™¤å•¦");
 		}
 		return a/b;   
 	}

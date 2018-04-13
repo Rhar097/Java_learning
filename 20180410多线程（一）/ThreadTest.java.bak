@@ -6,6 +6,10 @@
 Thread-编号  该编号从0开始。
 
 
+static Thread currentThread()：获取当前线程对象。
+getName()：获取线程名称。
+
+设置线程名称：setName或者构造函数。
 */
 
 class Test extends Thread

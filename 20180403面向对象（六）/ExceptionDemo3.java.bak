@@ -36,6 +36,13 @@
 
 只有这个体系中的类和对象才可以被throws和throw操作。
 
+
+throws和throw区别：
+throws使用在函数上，throw使用在函数内。
+
+throws后面跟的异常类，可以跟多个，用逗号隔开。
+throw后跟的是异常对象。
+
 */
 
 class FuShuException extends Exception//getMessage();

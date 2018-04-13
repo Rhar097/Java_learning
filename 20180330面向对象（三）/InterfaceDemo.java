@@ -1,25 +1,25 @@
 /*
-�ӿڣ��������⣬����Ϊ��һ������ĳ�����
-	���������еķ������ǳ���ģ���ô�������ͨ���ӿڵ���ʽ����ʾ��
-class���ڶ����ࡣ
-interface���ڶ���ӿڡ�
+接口：初期理解，可认为是一个特殊的抽象类
+	当抽象类中的方法都是抽象的，那么该类可以通过接口的形式来表示。
+class用于定义类。
+interface用于定义接口。
 
-�ӿڶ���ʱ����ʽ�ص㣺
-1.�ӿ��г������壺���������󷽷���
-2.�ӿ��еĳ�Ա���й̶����η���
-	������public static final
-	������public abstract
-��ס���ӿ��еĳ�Ա����public�ġ�
-
-
-
-�ӿڣ��ǲ����Դ�������ģ���Ϊ�г��󷽷���
-��Ҫ������ʵ�֣�����Խӿ��еĳ��󷽷�ȫ�����Ǻ�����ſ���ʵ������
-����������һ�������ࡣ
+接口定义时，格式特点：
+1.接口中常见定义：常量，抽象方法。
+2.接口中的成员都有固定修饰符。
+	常量：public static final
+	方法：public abstract
+记住：接口中的成员都是public的。
 
 
 
-�ӿڿ��Ա����ʵ�֣�Ҳ�ǶԶ�̳в�֧�ֵ�ת����ʽ��java֧�ֶ�ʵ�֡�
+接口：是不可以创建对象的，因为有抽象方法。
+需要被子类实现，子类对接口中的抽象方法全都覆盖后，子类才可以实例化。
+否则子类是一个抽象类。
+
+
+
+接口可以被类多实现，也是对多继承不支持的转换形式，java支持多实现。
 */
 
 interface Inter
@@ -38,7 +38,7 @@ class Demo
 	public void function(){}
 }
 
-//implements ʵ��
+//implements 实现
 class Test extends Demo implements Inter,InterA
 {
 	public void show(){}

@@ -86,7 +86,7 @@ class ExceptionDemo2
 		}
 		catch (Exception e)
 		{
-			System.out.println("hahah"+e.toString());
+			System.out.println("hahah:"+e.toString());
 		}
 		
 

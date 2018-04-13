@@ -6,6 +6,7 @@
 	学习，睡觉。
 
 可以将这两类事物进行抽取。
+
 */
 
 abstract class Student
@@ -46,6 +47,7 @@ class DoStudent
 	}
 }
 
+
 class  DuoTaiDemo3
 {
 	public static void main(String[] args) 
@@ -55,11 +57,7 @@ class  DuoTaiDemo3
 		ds.doSome(new BaseStudent());
 		ds.doSome(new AdvStudent());
 
-		
-		
-		
-		
-		
+
 		/*
 		BaseStudent bs = new BaseStudent();
 		bs.study();

@@ -25,6 +25,31 @@
 
 	注意：当内部类中定义了静态成员，该内部类必须是static的。
 		  当外部类中的静态方法访问内部类时，内部类也必须是static的。
+
+
+
+
+当描述事物时，事物的内部还在事物，该事物用内部类来描述。
+因为内部事务在使用外部事物的内容。
+
+class Body
+{
+	private class XinZang
+	{
+
+	}
+
+	public void show()
+	{
+		new XinZang();
+	}
+}
+
+
+
+
+
+
 */
 class Outer
 {

@@ -30,5 +30,6 @@ class InnerClassDemo3
 	public static void main(String[] args) 
 	{
 		new Outer().method(7);
+		new Outer().method(8);
 	}
 }

@@ -30,7 +30,7 @@ class Demo //extends Object
 		return this.num==d.num;
 	}
 	*/
-	PUBLIC sTRING TOsTRING()
+	public String toString()
 	{
 		return "demo"+num;
 	}

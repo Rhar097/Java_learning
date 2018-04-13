@@ -1,11 +1,11 @@
 /*
 
-2.��һ���ַ������з�ת�����ַ�����ָ�����ֽ��з�ת����abcdefg����abfedcg
-	˼·��
-	1.����ѧϰ���������Ԫ�ؽ��з�ת��
-	2.���ַ���������飬�����鷴ת��
-	3.����ת����������ַ�����
-	4.ֻҪ����ת�Ĳ��ֵĿ�ʼ�ͽ���λ����Ϊ�������ݼ��ɡ�
+2.将一个字符串进行反转。将字符串中指定部分进行反转，“abcdefg”；abfedcg
+	思路：
+	1.曾经学习过对数组的元素进行反转。
+	2.将字符串变成数组，对数组反转。
+	3.将反转后的数组变成字符串。
+	4.只要将或反转的部分的开始和结束位置作为参数传递即可。
 */
 
 
@@ -25,13 +25,13 @@ class  StringTest1
 
 	public static String reverseString(String s,int start,int end)
 	{
-		//�ַ����������
+		//字符串变成数组
 		char[] chs = s.toCharArray();
 
-		//���鷴ת
+		//数组反转
 		reverse(chs,start,end);
 
-		//�������ַ���
+		//数组变成字符串
 		return new String(chs);
 	}
 
@@ -49,4 +49,3 @@ class  StringTest1
 		arr[y] = temp;
 	}
 }
-

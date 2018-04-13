@@ -12,35 +12,47 @@
 
 
 
-abstract class Student
-{
-	abstract void study();
-	void sleep()
-	{
-		System.out.println("sleep");
-	}
+//abstract class Student
+//{
+//	abstract void study();
+//	void sleep()
+//	{
+//		System.out.println("sleep");
+//	}
 
 	//void smoke()
 	//{
 	//	System.out.println("smoke");
 	//}
-}
+//}
 
-interface Smoking
+//interface Smoking
+//{
+//	void smoke();
+//}
+
+//class Zhangsan extends Student implements Smoking
+//{
+//	void study(){}
+//	public void smoke(){}
+//}
+
+//class Lisi extends Student
+//{
+//}
+
+abstract class Sporter
 {
-	void smoke();
+	abstract void play();
 }
 
-class Zhangsan extends Student implements Smoking
-{
-	void study(){}
-	public void smoke(){}
-}
-
-class Lisi extends Student
+interface study
 {
 }
 
+class Wangwu extends Sporter implements study
+{
+}
 
 class  InterfaceDemo2
 {

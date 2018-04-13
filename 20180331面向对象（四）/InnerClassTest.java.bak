@@ -46,3 +46,24 @@ class InnerClassTest
 		*/
 	}
 }
+
+class InnerTest
+{
+	
+	//static class Inner
+	//{
+	//	void function()
+	//	{}
+	//}
+	public static void main(String[] args)
+	{
+		//new Inner().function();
+		new Object()
+		{
+			public void function()
+			{
+
+			}
+		}.function();
+	}
+}

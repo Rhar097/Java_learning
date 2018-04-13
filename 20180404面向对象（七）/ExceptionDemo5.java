@@ -1,7 +1,7 @@
 
 /*
-	finally����飺����һ��ִ�еĴ��롣
-	ͨ�����ڹر���Դ��
+	finally代码块：定义一定执行的代码。
+	通常用于关闭资源。
 
 */
 
@@ -19,7 +19,7 @@ class Demo
 	{
 		if (b<0)
 		{
-			throw new FuShuException("����Ϊ����");
+			throw new FuShuException("除数为负数");
 		}
 		
 		return a/b;   
@@ -46,7 +46,7 @@ class ExceptionDemo5
 		}
 		finally
 		{
-			System.out.println("finally");//finally�д�ŵ���һ���ᱻִ�еĴ���
+			System.out.println("finally");//finally中存放的是一定会被执行的代码
 		}
 
 		System.out.println("over");
@@ -61,27 +61,27 @@ class NoException extends Exception
 
 public void method()throws NoException
 {
-	�������ݿ⣻
+	连接数据库；
 	
-	���ݲ�����//throw new SQLException();
+	数据操作；//throw new SQLException();
 
-	�ر����ݿ⣻//�ö������������ݲ����Ƿ�ɹ���һ��Ҫ�ر���Դ��
+	关闭数据库；//该动作，无论数据操作是否成功，一定要关闭资源。
 
 
 	try
 	{
-		�������ݿ⣻
+		连接数据库；
 
-		���ݲ�����//throw new SQLException();
+		数据操作；//throw new SQLException();
 	}
 	catch (SQLException e)
 	{
-		������ݿ�����쳣������
-		throw new NoException();//����ķ�װ��
+		会对数据库进行异常处理；
+		throw new NoException();//问题的封装。
 
 	}
 	finally
 	{
-		�ر����ݿ⣻
+		关闭数据库；
 	}
 }

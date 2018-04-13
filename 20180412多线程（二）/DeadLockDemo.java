@@ -1,6 +1,6 @@
 /*
-ËÀËø£º
-Í¬²½ÖĞÇ¶Ì×Í¬²½¡£
+æ­»é”ï¼š
+åŒæ­¥ä¸­åµŒå¥—åŒæ­¥ã€‚
 */
 
 class Ticket implements Runnable
@@ -15,7 +15,7 @@ class Ticket implements Runnable
 			while(true)
 			{
 			
-				synchronized(obj)//Í¬²½Ëø£¬±êÖ¾Î»0¡¢1,Àà±È»ğ³µµÄÎÀÉú¼ä£¨ÓĞÈËÎŞÈË£©
+				synchronized(obj)//åŒæ­¥é”ï¼Œæ ‡å¿—ä½0ã€1,ç±»æ¯”ç«è½¦çš„å«ç”Ÿé—´ï¼ˆæœ‰äººæ— äººï¼‰
 				{
 					show();
 				}	

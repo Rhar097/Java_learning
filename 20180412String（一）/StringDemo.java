@@ -7,20 +7,20 @@ class  StringDemo
 	public static void main(String[] args) 
 	{
 		
-		String s1 = "abc";//s1ÊÇÒ»¸öÀàÀàÐÍ±äÁ¿£¬¡°abc¡±ÊÇÒ»¸ö¶ÔÏó¡£
-						//×Ö·û´®×î´óÌØµã£ºÒ»µ©±»³õÊ¼»¯¾Í²»¿ÉÒÔ±»¸Ä±ä¡£
+		String s1 = "abc";//s1æ˜¯ä¸€ä¸ªç±»ç±»åž‹å˜é‡ï¼Œâ€œabcâ€æ˜¯ä¸€ä¸ªå¯¹è±¡ã€‚
+						//å­—ç¬¦ä¸²æœ€å¤§ç‰¹ç‚¹ï¼šä¸€æ—¦è¢«åˆå§‹åŒ–å°±ä¸å¯ä»¥è¢«æ”¹å˜ã€‚
 
 		String s2 = new String("abc");
 		
-		//s1ºÍs2ÓÐÊ²Ã´Çø±ð£¿
-		//s1ÔÚÄÚ´æÖÐÓÐÒ»¸ö¶ÔÏó¡£
-		//s2ÔÚÄÚ´æÖÐÓÐÁ½¸ö¶ÔÏó¡£
+		//s1å’Œs2æœ‰ä»€ä¹ˆåŒºåˆ«ï¼Ÿ
+		//s1åœ¨å†…å­˜ä¸­æœ‰ä¸€ä¸ªå¯¹è±¡ã€‚
+		//s2åœ¨å†…å­˜ä¸­æœ‰ä¸¤ä¸ªå¯¹è±¡ã€‚
 
 
 		
 		System.out.println(s1==s2);
-		System.out.println(s1.equals(s2));//StringÀà¸´Ð´ÁËObjectÀàÖÐequals·½·¨£¬
-										//¸Ã·½·¨ÓÃÓÚÅÐ¶Ï×Ö·û´®ÄÚÈÝÊÇ·ñÏàÍ¬¡£
+		System.out.println(s1.equals(s2));//Stringç±»å¤å†™äº†Objectç±»ä¸­equalsæ–¹æ³•ï¼Œ
+										//è¯¥æ–¹æ³•ç”¨äºŽåˆ¤æ–­å­—ç¬¦ä¸²å†…å®¹æ˜¯å¦ç›¸åŒã€‚
 
 	}
 }

@@ -29,7 +29,7 @@ class UserInfoByJDBC implements UserInfoDao
 	}
 }
 
-class UserInfoByHibernate
+class UserInfoByHibernate implements UserInfoDao
 {
 	public void add(User user)
 	{

@@ -43,7 +43,17 @@ class Manager extends Employee
 	}
 }
 
-
+class Pro extends Employee
+{
+	pro(String name,String id,double pay)
+	{
+		super(name,id,pay);
+	}
+	public void work()
+	{
+		System.out.println("pro work");
+	}
+}
 
 
 class  

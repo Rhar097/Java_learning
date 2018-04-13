@@ -1,59 +1,59 @@
 /*
-Òì³££º¾ÍÊÇ³ÌÐòÔÚÔËÐÐÊ±³öÏÖ²»Õý³£Çé¿ö¡£
-Òì³£ÓÉÀ´£ºÎÊÌâÒ²ÊÇÏÖÊµÉú»îÖÐÒ»¸ö¾ßÌåµÄÊÂÎï£¬Ò²¿ÉÒÔÍ¨¹ýjavaµÄÀàµÄÐÎÊ½½øÐÐÃèÊö£¬²¢·â×°³É¶ÔÏó¡£
-			ÆäÊµ¾ÍÊÇjava¶Ô²»Õý³£Çé¿ö½øÐÐÃèÊöºóµÄ¶ÔÏóÌåÏÖ¡£
+å¼‚å¸¸ï¼šå°±æ˜¯ç¨‹åºåœ¨è¿è¡Œæ—¶å‡ºçŽ°ä¸æ­£å¸¸æƒ…å†µã€‚
+å¼‚å¸¸ç”±æ¥ï¼šé—®é¢˜ä¹Ÿæ˜¯çŽ°å®žç”Ÿæ´»ä¸­ä¸€ä¸ªå…·ä½“çš„äº‹ç‰©ï¼Œä¹Ÿå¯ä»¥é€šè¿‡javaçš„ç±»çš„å½¢å¼è¿›è¡Œæè¿°ï¼Œå¹¶å°è£…æˆå¯¹è±¡ã€‚
+			å…¶å®žå°±æ˜¯javaå¯¹ä¸æ­£å¸¸æƒ…å†µè¿›è¡Œæè¿°åŽçš„å¯¹è±¡ä½“çŽ°ã€‚
 
-¶ÔÓÚÎÊÌâµÄ»®·Ö£ºÁ½ÖÖ£ºÒ»ÖÖÊÇÑÏÖØµÄÎÊÌâ£»Ò»ÖÖÊÇ·ÇÑÏÖØµÄÎÊÌâ¡£
+å¯¹äºŽé—®é¢˜çš„åˆ’åˆ†ï¼šä¸¤ç§ï¼šä¸€ç§æ˜¯ä¸¥é‡çš„é—®é¢˜ï¼›ä¸€ç§æ˜¯éžä¸¥é‡çš„é—®é¢˜ã€‚
 
 
-¶ÔÓÚÑÏÖØµÄ£¬javaÍ¨¹ýErrorÀà½øÐÐÃèÊö¡£
-	¶ÔÓÚErrorÒ»°ã²»±àÐ´Õë¶ÔÐÔµÄ´úÂë¶ÔÆä½øÐÐ´¦Àí¡£
+å¯¹äºŽä¸¥é‡çš„ï¼Œjavaé€šè¿‡Errorç±»è¿›è¡Œæè¿°ã€‚
+	å¯¹äºŽErrorä¸€èˆ¬ä¸ç¼–å†™é’ˆå¯¹æ€§çš„ä»£ç å¯¹å…¶è¿›è¡Œå¤„ç†ã€‚
 	
-¶ÔÓÚ·ÇÑÏÖØµÄ£¬javaÍ¨¹ýExceptionÀà½øÐÐÃèÊö¡£
-	¶ÔÓÚException¿ÉÒÔÊ¹ÓÃÕë¶ÔÐÔµÄ´¦Àí·½Ê½½øÐÐ´¦Àí¡£
+å¯¹äºŽéžä¸¥é‡çš„ï¼Œjavaé€šè¿‡Exceptionç±»è¿›è¡Œæè¿°ã€‚
+	å¯¹äºŽExceptionå¯ä»¥ä½¿ç”¨é’ˆå¯¹æ€§çš„å¤„ç†æ–¹å¼è¿›è¡Œå¤„ç†ã€‚
 
-ÎÞÂÛError»òÕßException¶¼¾ßÓÐÒ»Ð©¹²ÐÔÄÚÈÝ¡£
-±ÈÈç£º²»Õý³£Çé¿öµÄÐÅÏ¢£¬Òý·¢Ô­ÒòµÈ¡£
+æ— è®ºErroræˆ–è€…Exceptionéƒ½å…·æœ‰ä¸€äº›å…±æ€§å†…å®¹ã€‚
+æ¯”å¦‚ï¼šä¸æ­£å¸¸æƒ…å†µçš„ä¿¡æ¯ï¼Œå¼•å‘åŽŸå› ç­‰ã€‚
 
 Throwable 
 	|--Error
 	|--Exception
 
 
-2.Òì³£µÄ´¦Àí
+2.å¼‚å¸¸çš„å¤„ç†
 
-javaÌá¹©ÁËÌØÓÐµÄÓï¾ä½øÐÐ´¦Àí¡£
+javaæä¾›äº†ç‰¹æœ‰çš„è¯­å¥è¿›è¡Œå¤„ç†ã€‚
 try
 {
-	ÐèÒª±»¼ì²âµÄ´úÂë£»
+	éœ€è¦è¢«æ£€æµ‹çš„ä»£ç ï¼›
 }
-catch(Òì³£Àà ±äÁ¿)
+catch(å¼‚å¸¸ç±» å˜é‡)
 {
-	´¦ÀíÒì³£µÄ´úÂë£»£¨´¦Àí·½Ê½£©
+	å¤„ç†å¼‚å¸¸çš„ä»£ç ï¼›ï¼ˆå¤„ç†æ–¹å¼ï¼‰
 }
 finally
 {
-	Ò»¶¨»áÖ´ÐÐµÄÓï¾ä£»
+	ä¸€å®šä¼šæ‰§è¡Œçš„è¯­å¥ï¼›
 }
 
-3.¶Ô²¶»ñµ½µÄÒì³£¶ÔÏó½øÐÐ³£¼û·½·¨²Ù×÷¡£
-	String getMessage(): »ñÈ¡Òì³£ÐÅÏ¢¡£
+3.å¯¹æ•èŽ·åˆ°çš„å¼‚å¸¸å¯¹è±¡è¿›è¡Œå¸¸è§æ–¹æ³•æ“ä½œã€‚
+	String getMessage(): èŽ·å–å¼‚å¸¸ä¿¡æ¯ã€‚
 
 
-¶Ô¶àÒì³£µÄ´¦Àí¡£
+å¯¹å¤šå¼‚å¸¸çš„å¤„ç†ã€‚
 
-1.ÉùÃ÷Òì³£Ê±£¬½¨ÒéÉùÃ÷¸üÎª¾ßÌåµÄÒì³££¬ÕâÑù´¦ÀíµÄ¿ÉÒÔ¸ü¾ßÌå¡£
-2.¶Ô·½ÉùÃ÷¼¸¸öÒì³££¬¾Í¶ÔÓ¦¼¸¸öcatch¿é¡£
-	Èç¹û¶à¸öcatch¿éÖÐµÄÒì³£³öÏÖ¼Ì³Ð¹ØÏµ£¬¸¸ÀàÒì³£catch¿é·ÅÔÚ×îÏÂÃæ¡£
+1.å£°æ˜Žå¼‚å¸¸æ—¶ï¼Œå»ºè®®å£°æ˜Žæ›´ä¸ºå…·ä½“çš„å¼‚å¸¸ï¼Œè¿™æ ·å¤„ç†çš„å¯ä»¥æ›´å…·ä½“ã€‚
+2.å¯¹æ–¹å£°æ˜Žå‡ ä¸ªå¼‚å¸¸ï¼Œå°±å¯¹åº”å‡ ä¸ªcatchå—ã€‚
+	å¦‚æžœå¤šä¸ªcatchå—ä¸­çš„å¼‚å¸¸å‡ºçŽ°ç»§æ‰¿å…³ç³»ï¼Œçˆ¶ç±»å¼‚å¸¸catchå—æ”¾åœ¨æœ€ä¸‹é¢ã€‚
 
-½¨Á¢ÔÚ½øÐÐcatch´¦ÀíÊ±£¬catchÖÐÒ»¶¨Òª¶¨Òå¾ßÌå´¦Àí·½Ê½¡£
-²»Òª¼òµ¥¶¨ÒåÒ»¾äe.printStackTrace();
-Ò²²»Òª¼òµ¥µÄ¾ÍÊéÐ´Ò»ÌõÊä³öÓï¾ä¡£
+å»ºç«‹åœ¨è¿›è¡Œcatchå¤„ç†æ—¶ï¼Œcatchä¸­ä¸€å®šè¦å®šä¹‰å…·ä½“å¤„ç†æ–¹å¼ã€‚
+ä¸è¦ç®€å•å®šä¹‰ä¸€å¥e.printStackTrace();
+ä¹Ÿä¸è¦ç®€å•çš„å°±ä¹¦å†™ä¸€æ¡è¾“å‡ºè¯­å¥ã€‚
 
 */
 class Demo
 {
-	int div(int a,int b) throws ArithmeticException,ArrayIndexOutOfBoundsException//ÔÚ¹¦ÄÜÉÏÍ¨¹ýthrowsµÄ¹Ø¼ü×ÖÉùÃ÷ÁË¸Ã¹¦ÄÜÓÐ¿ÉÄÜ³öÏÖÎÊÌâ
+	int div(int a,int b) throws ArithmeticException,ArrayIndexOutOfBoundsException//åœ¨åŠŸèƒ½ä¸Šé€šè¿‡throwsçš„å…³é”®å­—å£°æ˜Žäº†è¯¥åŠŸèƒ½æœ‰å¯èƒ½å‡ºçŽ°é—®é¢˜
 	{
 		int[] arr = new int[a];
 
@@ -77,12 +77,12 @@ class ExceptionDemo2
 		catch (ArithmeticException e)
 		{
 			System.out.println(e.toString());
-			System.out.println("±»Áã³ýÁË!!");
+			System.out.println("è¢«é›¶é™¤äº†!!");
 		}
 		catch (ArrayIndexOutOfBoundsException e)
 		{
 			System.out.println(e.toString());
-			System.out.println("½Ç±êÔ½½çÀ²£¡£¡");
+			System.out.println("è§’æ ‡è¶Šç•Œå•¦ï¼ï¼");
 		}
 		catch (Exception e)
 		{

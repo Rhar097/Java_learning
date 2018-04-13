@@ -22,7 +22,7 @@ class Bank
 		//synchronized(obj)
 		//{
 			sum = sum + n;
-			try{Thread.sleep(10);}catch(Exception e){}
+			//try{Thread.sleep(10);}catch(Exception e){}
 			System.out.println("sum="+sum);
 		//}
 		

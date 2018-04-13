@@ -20,7 +20,7 @@ class  StringDemo
 		
 		System.out.println(s1==s2);
 		System.out.println(s1.equals(s2));//String类复写了Object类中equals方法，
-										//该方法用于判断字符串是否相同。
+										//该方法用于判断字符串内容是否相同。
 
 	}
 }

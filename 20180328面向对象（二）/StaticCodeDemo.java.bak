@@ -21,10 +21,11 @@ class StaticCode
 	}
 	static//静态代码块给类初始化
 	{
-		System.out.println("a"+num);
+		System.out.println("a");
+		//System.out.println("a"+num);//StaticCodeDemo.java:24: 错误:无法从静态上下文中引用非静态
 	}
 	{
-		System.out.println("c");//构造代码块给对象初始化
+		System.out.println("c"+num);//构造代码块给对象初始化
 	}
 	StaticCode(int x)//构造函数给对应对象初始化
 	{

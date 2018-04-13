@@ -16,6 +16,11 @@ Exception中有一个特殊的子类异常RuntimeException 运行时异常。
 就让自定义异常继承RuntimeException.
 
 
+对于异常分两种：
+1.编译时被检测的异常。
+
+2.编译时不被检测的异常（运行时异常，RuntimeException以及其子类）。
+
 */
 
 class FuShuException extends RuntimeException

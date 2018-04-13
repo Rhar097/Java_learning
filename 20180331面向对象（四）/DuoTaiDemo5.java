@@ -1,7 +1,7 @@
 /*
-ĞèÇó£º
-µçÄÔÔËĞĞÊµÀı¡£
-µçÄÔÔËĞĞ»ùÓÚÖ÷°å¡£
+éœ€æ±‚ï¼š
+ç”µè„‘è¿è¡Œå®ä¾‹ã€‚
+ç”µè„‘è¿è¡ŒåŸºäºä¸»æ¿ã€‚
 */
 /*
 class MainBoard
@@ -42,7 +42,7 @@ class MainBoard
 	{
 		System.out.println("mainboard run");
 	}
-	public void usePCI(PCI p)//PCI p =new NetCard();//½Ó¿ÚĞÍÒıÓÃÖ¸Ïò×Ô¼ºµÄ×ÓÀà¶ÔÏó¡£
+	public void usePCI(PCI p)//PCI p =new NetCard();//æ¥å£å‹å¼•ç”¨æŒ‡å‘è‡ªå·±çš„å­ç±»å¯¹è±¡ã€‚
 	{
 		if(p!=null)
 		{

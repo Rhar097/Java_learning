@@ -1,47 +1,47 @@
 /*
-��Ϊ��Ŀ�л�������е����⡣
-����Щ���Ⲣδ��java����������װ����
-���Զ�����Щ���е�������԰���java�Ķ������װ��˼�롣
-�����е����⣬�����Զ�����쳣��װ��
+因为项目中会出现特有的问题。
+而这些问题并未被java所描述并封装对象。
+多以对于这些特有的问题可以按照java的对问题封装的思想。
+将特有的问题，进行自定义的异常封装。
 
-�Զ����쳣��
+自定义异常：
 
-�����ڱ������У����ڳ�����-1��Ҳ��Ϊ�Ǵ���ģ����޷�����ġ�
-��ô����Ҫ�������������Զ����������
+需求：在本程序中，对于除数是-1，也视为是错误的，是无法运算的。
+那么就需要对这个问题进行自定义的描述。
 
-���ں����ڲ�������throw�׳��쳣������ô�ñ���Ҫ����Ӧ�Ĵ���������
-Ҫô���ڲ�try catch������
-Ҫô�ں����������õ����ߴ�����
+当在函数内部出现了throw抛出异常对象，那么久必须要给对应的处理动作。
+要么在内部try catch处理。
+要么在函数上声明让调用者处理。
 
-һ������£������ڳ����쳣����������Ҫ������
-
-
-���ִ�ӡ�Ľ����ֻ���쳣�����ƣ�ȴû���쳣����Ϣ��
-��Ϊ�Զ�����쳣��û�ж�����Ϣ��
-
-��ζ����쳣��Ϣ�أ�
-��Ϊ�������Ѿ����쳣��Ϣ�Ĳ���������ˡ�
-��������ֻҪ�ڹ���ʱ�����쳣��Ϣ���ݸ�����ͨ��super��䡣
-��ô�Ϳ���ֱ��ͨ��getMessage������ȡ�Զ�����쳣��Ϣ��
+一般情况下，函数内出现异常，函数上需要声明。
 
 
-ע�⣺
-�Զ����쳣��
-�������Զ�����̳�Exception��
+发现打印的结果中只有异常的名称，却没有异常的信息。
+因为自定义的异常并没有定义信息。
+
+如何定义异常信息呢？
+因为父类中已经把异常信息的操作都完成了。
+所以子类只要在构造时，将异常信息传递给父类通过super语句。
+那么就可以直接通过getMessage方法获取自定义的异常信息。
 
 
-�̳�Exceptionԭ��
-�쳣��ϵ��һ���ص㣺��Ϊ�쳣����쳣���󶼱��׳���
-���Ƕ��߱������ԣ������������Throwable�����ϵ�ж����ص㡣
-
-ֻ�������ϵ�е���Ͷ���ſ��Ա�throws��throw������
+注意：
+自定义异常：
+必须是自定义类继承Exception。
 
 
-throws��throw����
-throwsʹ���ں����ϣ�throwʹ���ں����ڡ�
+继承Exception原因：
+异常体系有一个特点：因为异常类和异常对象都被抛出。
+他们都具备可抛性，这个可抛性是Throwable这个体系中独有特点。
 
-throws��������쳣�࣬���Ը�������ö��Ÿ�����
-throw��������쳣����
+只有这个体系中的类和对象才可以被throws和throw操作。
+
+
+throws和throw区别：
+throws使用在函数上，throw使用在函数内。
+
+throws后面跟的异常类，可以跟多个，用逗号隔开。
+throw后跟的是异常对象。
 
 */
 
@@ -65,7 +65,7 @@ class Demo
 	int div(int a,int b) throws FuShuException
 	{
 		if(b<0)
-			throw new FuShuException("�����˳����Ǹ��������------/by fushu",b);//�ֶ�ͨ��throw�ؼ����׳�һ���Զ����쳣����
+			throw new FuShuException("出现了除数是负数的情况------/by fushu",b);//手动通过throw关键字抛出一个自定义异常对象
 
 		return a/b;   
 	}
@@ -86,8 +86,8 @@ class ExceptionDemo3
 		catch (FuShuException e)
 		{
 			System.out.println(e.toString());
-			//System.out.println("�������ָ�����");
-			System.out.println("����ĸ����ǣ�"+e.getValue());
+			//System.out.println("除数出现负数了");
+			System.out.println("错误的负数是："+e.getValue());
 		}
 		
 		

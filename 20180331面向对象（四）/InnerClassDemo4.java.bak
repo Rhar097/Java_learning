@@ -5,6 +5,7 @@
 	内部类必须是继承一个类或者实现接口。
 3.匿名内部类的格式：  new 父类或者接口(){定义子类的内容}
 4.其实匿名内部类就是一个匿名子类对象。而且这个对象有点胖， 可以理解为带内容的对象。
+5.匿名内部类中顶一顶额方法最好不要超过3个。
 
 */
 
@@ -35,9 +36,10 @@ class Outer
 
 		AbsDemo d = new AbsDemo()
 		{
+			int num = 9;
 			void show()
 			{
-				System.out.println("x="+x);
+				System.out.println("num="+num);
 			}
 			void abc()
 			{
@@ -46,7 +48,7 @@ class Outer
 		};
 
 		d.show();
-		d.abc();
+		//d.abc();//编译失败；
 	}
 }
 

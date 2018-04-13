@@ -9,13 +9,13 @@ interface用于定义接口。
 2.接口中的成员都有固定修饰符。
 	常量：public static final
 	方法：public abstract
-
+记住：接口中的成员都是public的。
 
 */
 
 interface Inter
 {
-	public static final int x = 3;
+	public static final int NUM = 3;
 	public abstract void show();
 }
 

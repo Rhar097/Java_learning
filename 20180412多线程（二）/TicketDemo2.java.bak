@@ -20,6 +20,21 @@ synchronized(对象)
 	需要被同步的代码
 }
 
+对象如同锁。持有锁的线程可以在同步中执行。
+没有持有锁的线程即使获取cpu的执行权，也进不去，因为没有获取锁。
+
+火车上的卫生间---经典。
+
+同步的前提：
+1.必须要有两个或者两个以上的线程。
+2.必须是多个线程使用同一个锁。
+
+必须保证同步中只能有一个线程在执行。
+
+好处：解决了多线程的安全问题。
+
+弊端：多个线程需要判断锁，较为消耗资源。
+
 */
 
 class Ticket implements Runnable
@@ -30,7 +45,7 @@ class Ticket implements Runnable
 	{
 		while(true)
 		{
-			synchronized(obj)
+			synchronized(obj)//同步锁，标志位0、1,类比火车的卫生间（有人无人）
 			{
 				if(tick>0)
 				{

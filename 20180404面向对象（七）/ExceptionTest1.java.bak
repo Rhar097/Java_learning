@@ -18,7 +18,7 @@ class Rec implements Shape
 {
 	private int len,wid;
 
-	Rec(int len,int wid)
+	Rec(int len,int.36]1`q6	 wid)
 	{
 		this.len = len;
 		this.wid = wid;

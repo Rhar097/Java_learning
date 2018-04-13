@@ -1,8 +1,8 @@
 /*
-��һ��Բ�κͳ����Ρ�
-�����Ի�ȡ������������������ַǷ�����ֵ����Ϊ�ǻ�ȡ����������⡣
-����ͨ���쳣����ʾ��
-���ж����������л�����ƣ�
+有一个圆形和长方形。
+都可以获取面积，对于面积如果出现非法的数值，视为是获取面积出现问题。
+问题通过异常来表示。
+现有对这个程序进行基本设计，
 
 
 */
@@ -28,7 +28,7 @@ class Rec implements Shape
 	{
 		if (len<=0 || wid<=0)
 		{
-			throw new NoValueException("���ַǷ�ֵ");
+			throw new NoValueException("出现非法值");
 		}
 		this.len = len;
 		this.wid = wid;
@@ -49,7 +49,7 @@ class Circle implements Shape
 	{
 		if (radius<=0)
 		{
-			throw new NoValueException("�Ƿ�");
+			throw new NoValueException("非法");
 		}
 		this.radius = radius;
 	}

@@ -17,7 +17,7 @@
 class Ticket implements Runnable
 {
 	private int tick = 100;
-	Object obj = new Object();
+	//Object obj = new Object();
 	boolean flag = true;
 	public void run()
 	{
@@ -26,7 +26,7 @@ class Ticket implements Runnable
 			while(true)
 			{
 			
-				synchronized(obj)//同步锁，标志位0、1,类比火车的卫生间（有人无人）
+				synchronized(this)//同步锁，标志位0、1,类比火车的卫生间（有人无人）
 				{
 					if(tick>0)
 					{

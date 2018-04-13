@@ -698,7 +698,15 @@ class Circle
 	{
 		//³ÌĞò´úÂë
 
+		/*
+		if (this.radius>cir.radius)
+		{
+			return this;
+		}
+		return cir;
+		*/
 
+		return (this.radius>cir.radius)?this:cir;
 
 	}
 }

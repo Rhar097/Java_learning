@@ -57,12 +57,19 @@ class Demo
 
 class ExceptionDemo1 
 {
-	public static void main(String[] args) throws Exception 
+	public static void main(String[] args) //throws Exception 
 	{
 		Demo d = new Demo();
-
-		int x = d.div(4,0);       
-		System.out.println("x="+x);
+		try
+		{
+			int x = d.div(4,0);       
+			System.out.println("x="+x);
+		}
+		catch (Exception e)
+		{
+			System.out.println(e.toString());
+		}
+		
 		
 
 		System.out.println("over");

@@ -1,11 +1,11 @@
 
 /*
-»ù±¾°àÑ§Éú£º
-	Ñ§Ï°£¬Ë¯¾õ¡£
-¸ß¼¶°àÑ§Éú£º
-	Ñ§Ï°£¬Ë¯¾õ¡£
+åŸºæœ¬ç­å­¦ç”Ÿï¼š
+	å­¦ä¹ ï¼Œç¡è§‰ã€‚
+é«˜çº§ç­å­¦ç”Ÿï¼š
+	å­¦ä¹ ï¼Œç¡è§‰ã€‚
 
-¿ÉÒÔ½«ÕâÁ½ÀàÊÂÎï½øĞĞ³éÈ¡¡£
+å¯ä»¥å°†è¿™ä¸¤ç±»äº‹ç‰©è¿›è¡ŒæŠ½å–ã€‚
 
 */
 
@@ -14,7 +14,7 @@ abstract class Student
 	public abstract void study();
 	public void sleep()
 	{
-		System.out.println("ÌÉ×ÅË¯");
+		System.out.println("èººç€ç¡");
 	}
 }
 
@@ -24,9 +24,9 @@ class BaseStudent extends Student
 	{
 		System.out.println("base study");
 	}
-	public void sleep()//¸´Ğ´Ò»ÏÂ
+	public void sleep()//å¤å†™ä¸€ä¸‹
 	{
-		System.out.println("×ø×ÅË¯");
+		System.out.println("åç€ç¡");
 	}
 }
 

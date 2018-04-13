@@ -45,7 +45,7 @@ class Person
 	static String country = "CN";//静态的成员变量，类变量。
 	public static void show()
 	{
-		System.out.println(name+"::::"+country);
+		System.out.println("::::"+country);
 	}
 }
 

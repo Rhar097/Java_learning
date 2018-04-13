@@ -12,7 +12,7 @@ class Demo
 	{
 		if (b<0)
 		{
-			throw new FuShuException("³ýÊýÎª¸ºÊý");
+			throw new FuShuException("é™¤æ•°ä¸ºè´Ÿæ•°");
 		}
 		
 		return a/b;   

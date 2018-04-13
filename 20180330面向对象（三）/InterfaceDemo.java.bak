@@ -45,7 +45,7 @@ class Test extends Demo implements Inter,InterA
 	//public void method(){}
 }
 
-interface A
+interface A 
 {
 	void methodA();
 }

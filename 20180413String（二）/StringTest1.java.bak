@@ -23,7 +23,7 @@ class  StringTest1
 		sop(reverseString(s,2,6));
 	}
 
-	public static void reverseString(String s,int start,int end)
+	public static String reverseString(String s,int start,int end)
 	{
 		//字符串变成数组
 		char[] chs = s.toCharArray();

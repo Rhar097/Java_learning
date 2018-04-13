@@ -6,7 +6,7 @@ interface Inter
 
 class Test
 {
-	//²¹×ã´úÂë£¬Í¨¹ıÄäÃûÄÚ²¿Àà¡£
+	//è¡¥è¶³ä»£ç ï¼Œé€šè¿‡åŒ¿åå†…éƒ¨ç±»ã€‚
 	/*
 	static class Inner implements Inter
 	{
@@ -33,9 +33,9 @@ class InnerClassTest
 {
 	public static void main(String[] args) 
 	{
-		//Test.function():TestÀàÖĞÓĞÒ»¸ö¾²Ì¬µÄ·½·¨function¡£
-		//.method():functionÕâ¸ö·½·¨ÔËËãºóµÄ½á¹ûÊÇÒ»¸ö¶ÔÏó£¬¶øÇÒÊÇÒ»¸öInterÀàĞÍµÄ¶ÔÏó¡£
-		//ÒòÎªÖ»ÓĞÊÇInterÀàĞÍµÄ¶ÔÏó£¬²Å¿ÉÒÔµ÷ÓÃmethod·½·¨¡£
+		//Test.function():Testç±»ä¸­æœ‰ä¸€ä¸ªé™æ€çš„æ–¹æ³•functionã€‚
+		//.method():functionè¿™ä¸ªæ–¹æ³•è¿ç®—åçš„ç»“æœæ˜¯ä¸€ä¸ªå¯¹è±¡ï¼Œè€Œä¸”æ˜¯ä¸€ä¸ªInterç±»å‹çš„å¯¹è±¡ã€‚
+		//å› ä¸ºåªæœ‰æ˜¯Interç±»å‹çš„å¯¹è±¡ï¼Œæ‰å¯ä»¥è°ƒç”¨methodæ–¹æ³•ã€‚
 
 
 		Test.function().method();

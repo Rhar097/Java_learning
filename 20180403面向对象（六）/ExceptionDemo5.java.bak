@@ -25,6 +25,22 @@ class ExceptionDemo5
 {
 	public static void main(String[] args) 
 	{
-		
+		Demo d = new Demo();
+
+		try
+		{
+			int x = d.div(4,-1);
+			System.out.println("x="+x);
+		}
+		catch (FuShuException e)
+		{
+			System.out.println(e.toString());
+		}
+		finally
+		{
+
+		}
+
+		System.out.println("over");
 	}
 }

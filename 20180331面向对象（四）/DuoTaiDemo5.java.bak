@@ -42,7 +42,7 @@ class MainBoard
 	{
 		System.out.println("mainboard run");
 	}
-	public void usePCI(PCI p)
+	public void usePCI(PCI p)//PCI p =new NetCard();//接口型引用指向自己的子类对象。
 	{
 		if(p!=null)
 		{
@@ -84,5 +84,6 @@ class DuoTaiDemo5
 		mb.run();
 		mb.usePCI(null);
 		mb.usePCI(new NetCard());
+		mb.usePCI(new SoundCard());
 	}
 }

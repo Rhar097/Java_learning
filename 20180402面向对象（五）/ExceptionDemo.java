@@ -1,43 +1,43 @@
 /*
-Òì³££º¾ÍÊÇ³ÌÐòÔÚÔËÐÐÊ±³öÏÖ²»Õý³£Çé¿ö¡£
-Òì³£ÓÉÀ´£ºÎÊÌâÒ²ÊÇÏÖÊµÉú»îÖÐÒ»¸ö¾ßÌåµÄÊÂÎï£¬Ò²¿ÉÒÔÍ¨¹ýjavaµÄÀàµÄÐÎÊ½½øÐÐÃèÊö£¬²¢·â×°³É¶ÔÏó¡£
-			ÆäÊµ¾ÍÊÇjava¶Ô²»Õý³£Çé¿ö½øÐÐÃèÊöºóµÄ¶ÔÏóÌåÏÖ¡£
+å¼‚å¸¸ï¼šå°±æ˜¯ç¨‹åºåœ¨è¿è¡Œæ—¶å‡ºçŽ°ä¸æ­£å¸¸æƒ…å†µã€‚
+å¼‚å¸¸ç”±æ¥ï¼šé—®é¢˜ä¹Ÿæ˜¯çŽ°å®žç”Ÿæ´»ä¸­ä¸€ä¸ªå…·ä½“çš„äº‹ç‰©ï¼Œä¹Ÿå¯ä»¥é€šè¿‡javaçš„ç±»çš„å½¢å¼è¿›è¡Œæè¿°ï¼Œå¹¶å°è£…æˆå¯¹è±¡ã€‚
+			å…¶å®žå°±æ˜¯javaå¯¹ä¸æ­£å¸¸æƒ…å†µè¿›è¡Œæè¿°åŽçš„å¯¹è±¡ä½“çŽ°ã€‚
 
-¶ÔÓÚÎÊÌâµÄ»®·Ö£ºÁ½ÖÖ£ºÒ»ÖÖÊÇÑÏÖØµÄÎÊÌâ£»Ò»ÖÖÊÇ·ÇÑÏÖØµÄÎÊÌâ¡£
+å¯¹äºŽé—®é¢˜çš„åˆ’åˆ†ï¼šä¸¤ç§ï¼šä¸€ç§æ˜¯ä¸¥é‡çš„é—®é¢˜ï¼›ä¸€ç§æ˜¯éžä¸¥é‡çš„é—®é¢˜ã€‚
 
 
-¶ÔÓÚÑÏÖØµÄ£¬javaÍ¨¹ýErrorÀà½øÐÐÃèÊö¡£
-	¶ÔÓÚErrorÒ»°ã²»±àÐ´Õë¶ÔÐÔµÄ´úÂë¶ÔÆä½øÐÐ´¦Àí¡£
+å¯¹äºŽä¸¥é‡çš„ï¼Œjavaé€šè¿‡Errorç±»è¿›è¡Œæè¿°ã€‚
+	å¯¹äºŽErrorä¸€èˆ¬ä¸ç¼–å†™é’ˆå¯¹æ€§çš„ä»£ç å¯¹å…¶è¿›è¡Œå¤„ç†ã€‚
 	
-¶ÔÓÚ·ÇÑÏÖØµÄ£¬javaÍ¨¹ýExceptionÀà½øÐÐÃèÊö¡£
-	¶ÔÓÚException¿ÉÒÔÊ¹ÓÃÕë¶ÔÐÔµÄ´¦Àí·½Ê½½øÐÐ´¦Àí¡£
+å¯¹äºŽéžä¸¥é‡çš„ï¼Œjavaé€šè¿‡Exceptionç±»è¿›è¡Œæè¿°ã€‚
+	å¯¹äºŽExceptionå¯ä»¥ä½¿ç”¨é’ˆå¯¹æ€§çš„å¤„ç†æ–¹å¼è¿›è¡Œå¤„ç†ã€‚
 
-ÎÞÂÛError»òÕßException¶¼¾ßÓÐÒ»Ð©¹²ÐÔÄÚÈÝ¡£
-±ÈÈç£º²»Õý³£Çé¿öµÄÐÅÏ¢£¬Òý·¢Ô­ÒòµÈ¡£
+æ— è®ºErroræˆ–è€…Exceptionéƒ½å…·æœ‰ä¸€äº›å…±æ€§å†…å®¹ã€‚
+æ¯”å¦‚ï¼šä¸æ­£å¸¸æƒ…å†µçš„ä¿¡æ¯ï¼Œå¼•å‘åŽŸå› ç­‰ã€‚
 
 Throwable 
 	|--Error
 	|--Exception
 
 
-2.Òì³£µÄ´¦Àí
+2.å¼‚å¸¸çš„å¤„ç†
 
-javaÌá¹©ÁËÌØÓÐµÄÓï¾ä½øÐÐ´¦Àí¡£
+javaæä¾›äº†ç‰¹æœ‰çš„è¯­å¥è¿›è¡Œå¤„ç†ã€‚
 try
 {
-	ÐèÒª±»¼ì²âµÄ´úÂë£»
+	éœ€è¦è¢«æ£€æµ‹çš„ä»£ç ï¼›
 }
-catch(Òì³£Àà ±äÁ¿)
+catch(å¼‚å¸¸ç±» å˜é‡)
 {
-	´¦ÀíÒì³£µÄ´úÂë£»£¨´¦Àí·½Ê½£©
+	å¤„ç†å¼‚å¸¸çš„ä»£ç ï¼›ï¼ˆå¤„ç†æ–¹å¼ï¼‰
 }
 finally
 {
-	Ò»¶¨»áÖ´ÐÐµÄÓï¾ä£»
+	ä¸€å®šä¼šæ‰§è¡Œçš„è¯­å¥ï¼›
 }
 
-3.¶Ô²¶»ñµ½µÄÒì³£¶ÔÏó½øÐÐ³£¼û·½·¨²Ù×÷¡£
-	String getMessage(): »ñÈ¡Òì³£ÐÅÏ¢¡£
+3.å¯¹æ•èŽ·åˆ°çš„å¼‚å¸¸å¯¹è±¡è¿›è¡Œå¸¸è§æ–¹æ³•æ“ä½œã€‚
+	String getMessage(): èŽ·å–å¼‚å¸¸ä¿¡æ¯ã€‚
 
 
 
@@ -47,7 +47,7 @@ finally
 */
 class Demo
 {
-	int div(int a,int b) throws Exception//ÔÚ¹¦ÄÜÉÏÍ¨¹ýthrowsµÄ¹Ø¼ü×ÖÉùÃ÷ÁË¸Ã¹¦ÄÜÓÐ¿ÉÄÜ³öÏÖÎÊÌâ
+	int div(int a,int b) throws Exception//åœ¨åŠŸèƒ½ä¸Šé€šè¿‡throwsçš„å…³é”®å­—å£°æ˜Žäº†è¯¥åŠŸèƒ½æœ‰å¯èƒ½å‡ºçŽ°é—®é¢˜
 	{
 		return a/b;       //new ArithmeticException()
 	}
@@ -67,13 +67,13 @@ class ExceptionDemo
 		}
 		catch (Exception e)              //Exception e = new ArithmeticException();
 		{
-			System.out.println("³ýÁãÁË");
+			System.out.println("é™¤é›¶äº†");
 			System.out.println(e.getMessage());//by zero;
-			System.out.println(e.toString());//Òì³£Ãû³Æ £ºÒì³£ÐÅÏ¢¡£
+			System.out.println(e.toString());//å¼‚å¸¸åç§° ï¼šå¼‚å¸¸ä¿¡æ¯ã€‚
 
-			e.printStackTrace();//Òì³£Ãû³Æ£¬Òì³£ÐÅÏ¢£¬Òì³£³öÏÖµÄÎ»ÖÃ¡£
-							//ÆäÊµjvmÄ¬ÈÏµÄÒì³£´¦Àí»úÖÆ£¬¾ÍÊÇÔÚµ÷ÓÃprintStackTrace·½·¨£¬
-							//´òÓ¡Òì³£µÄ¶ÑÕ»µÄ¸ú×ÙÐÅÏ¢¡£
+			e.printStackTrace();//å¼‚å¸¸åç§°ï¼Œå¼‚å¸¸ä¿¡æ¯ï¼Œå¼‚å¸¸å‡ºçŽ°çš„ä½ç½®ã€‚
+							//å…¶å®žjvmé»˜è®¤çš„å¼‚å¸¸å¤„ç†æœºåˆ¶ï¼Œå°±æ˜¯åœ¨è°ƒç”¨printStackTraceæ–¹æ³•ï¼Œ
+							//æ‰“å°å¼‚å¸¸çš„å †æ ˆçš„è·Ÿè¸ªä¿¡æ¯ã€‚
 		}
 
 		System.out.println("over");

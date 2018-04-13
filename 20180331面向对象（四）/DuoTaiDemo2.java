@@ -1,40 +1,40 @@
 
 /*
-��̬����������Ϊ������ڵĶ���������̬��
+多态：可以理解为事物存在的多种体现形态。
 
-�ˣ����ˣ�Ů��
+人：男人，女人
 
-���è����
+动物：猫，狗
 
-è x = new è();
+猫 x = new 猫();
 
-���� x = new è();
+动物 x = new 猫();
 
-1.��̬������
-	���������ָ�����Լ����������
-	���������Ҳ���Խ����Լ����������
-2.��̬��ǰ��
-	�����������֮���й�ϵ��Ҫô�̳У�Ҫôʵ�֡�
-	ͨ��������һ��ǰ�᣺���ڸ��ǡ�
+1.多态的体现
+	父类的引用指向了自己的子类对象。
+	父类的引用也可以接收自己的子类对象。
+2.多态的前提
+	必须是类和类之间有关系，要么继承，要么实现。
+	通常，还有一个前提：存在覆盖。
 
-3.��̬�ĺô�
-	��̬�ĳ��ִ�������˳������չ�ԡ�
+3.多态的好处
+	多态的出现大大的提高了程序的扩展性。
 
-4.��̬�ı׶�
-	�������չ�ԣ�����ֻ��ʹ�ø�������÷��ʸ����еĳ�Ա��
+4.多态的弊端
+	提高了扩展性，但是只能使用父类的引用访问父类中的成员。
 
-5.��̬��Ӧ��
+5.多态的应用
 
-6.��̬�ĳ��ִ����е��ص㣨��̬ʹ�õ�ע�����
+6.多态的出现代码中的特点（多态使用的注意事项）
 
 
 
-�ڶ������⣺���ʹ���������з�����
+第二个问题：如何使用子类特有方法。
 */
 
 /*
-���
-è����
+动物，
+猫，狗
 
 */
 
@@ -47,12 +47,12 @@ class Cat extends Animal
 {
 	public void eat()
 	{
-		System.out.println("����");
+		System.out.println("吃鱼");
 	}
 
 	public void catchMouse()
 	{
-		System.out.println("ץ����");
+		System.out.println("抓老鼠");
 	}
 }
 
@@ -60,12 +60,12 @@ class Dog extends Animal
 {
 	public void eat()
 	{
-		System.out.println("�Թ�ͷ");
+		System.out.println("吃骨头");
 	}
 
 	public void kanJia()
 	{
-		System.out.println("����");
+		System.out.println("看家");
 	}
 }
 
@@ -73,11 +73,11 @@ class Pig extends Animal
 {
 	public void eat()
 	{
-		System.out.println("������");
+		System.out.println("吃饲料");
 	}
 	public void GongDi()
 	{
-		System.out.println("����");
+		System.out.println("拱地");
 	}
 }
 
@@ -90,29 +90,29 @@ class DuoTaiDemo2
 {
 	public static void main(String[] args) 
 	{
-		//Animal a = new Cat();//��������----������ת�͡�
+		//Animal a = new Cat();//类型提升----》向上转型。
 		//a.eat();
 
-		//�����Ҫ����è�����з���ʱ����β�����
-		//ǿ�ƽ��������ã�ת���������͡�����ת�͡�
+		//如果想要调用猫的特有方法时，如何操作？
+		//强制将父类引用，转成子类类型。向下转型。
 		//Cat c = (Cat)a;
 		//c.catchMouse();
 
-		//ǧ��Ҫ���������Ĳ��������ǽ��������ת�����������͡�
-		//������ת�����Ǹ�������ָ�����Լ����������ʱ�������ÿ��Ա�������Ҳ���Ա�ǿ��ת����
-		//��̬��ʼ���ն���������������ű仯��
+		//千万不要出现这样的操作，就是讲父类对象转换成子类类型。
+		//我们能转换的是父类引用指向了自己的子类对象时，该引用可以被提升，也可以被强制转换。
+		//多态自始至终都是子类对象在做着变化。
 //		Animal a = new Animal();
 //		Cat c = (Cat)a;
 
 
 /*
-		����ү x = new ����ʦ();//����ʦαװ�ɱ���ү
+		毕姥爷 x = new 毕老师();//毕老师伪装成毕姥爷
 
-		x.����();
+		x.讲课();
 
-		����ʦ y =(����ʦ)x;//����ʦ��ԭ�ɱ���ʦ
+		毕老师 y =(毕老师)x;//毕老师还原成毕老师
 
-		y.����Ӱ();
+		y.看电影();
 */
 		function(new Dog());
 		function(new Cat());
