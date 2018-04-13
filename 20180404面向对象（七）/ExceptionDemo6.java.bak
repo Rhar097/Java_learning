@@ -1,0 +1,41 @@
+
+第一个格式：
+try
+{
+	
+}
+catch ()
+{
+}
+
+第二个格式：
+try
+{
+	
+}
+catch ()
+{
+}
+finally
+{
+
+}
+
+
+第三个格式：
+try
+{
+	
+}
+finally
+{
+
+}
+
+class ExceptionDemo6
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}

@@ -1,0 +1,55 @@
+/*
+3.子父类中的构造函数。
+
+在对子类对象进行初始化时，杜磊的构造函数也会运行。
+那是因为子类的构造函数默认第一行有一条隐式的语句 super()；
+super():会访问父类中空参数的构造函数，而且子类中所有的构造函数默认第一行都是super();
+
+为什么子类一定要访问父类中的构造函数？
+
+
+
+*/
+
+class Fu
+{
+	int num;
+	Fu()
+	{
+		num = 60;
+		System.out.println("fu run");
+	}
+	Fu(int x)
+	{
+		System.out.println("fu ..."+x);
+	}
+}
+
+
+class Zi extends Fu
+{
+	Zi()
+	{
+		//super();
+		//super(4);
+		System.out.println("zi run");
+	}
+	Zi(int x)
+	{
+		//super();
+		//super(3);
+		System.out.println("si..."+x);
+	}
+}
+
+
+
+class ExtendsDemo4 
+{
+	public static void main(String[] args) 
+	{
+		Zi z = new Zi();
+		//Zi z1 = new Zi(4);
+		System.out.println(z.num);
+	}
+}

@@ -1,0 +1,30 @@
+class FuShuException extends Exception
+{
+	FuShuException(String msg)
+	{
+		super(msg);
+	}
+}
+
+class Demo
+{
+	int div(int a,int b) throws FuShuException
+	{
+		if (b<0)
+		{
+			throw new FuShuException("除数为负数");
+		}
+		
+		return a/b;   
+	}
+}
+
+
+
+class ExceptionDemo5
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}
